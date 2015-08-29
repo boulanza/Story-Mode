@@ -1,0 +1,21 @@
+-------------------------
+|        SUMMARY        |
+-------------------------
+Story Mode is a simulation program that generates a classic RPG story line. It will generate the main character, their side characters, plot points, etc.
+
+Remaining points of completion are highlighted below.
+
+
+-------------------------
+|  Character Generator  |
+-------------------------
+
+
+-------------------------
+|  Location  Generator  |
+-------------------------
+
+
+-------------------------
+|  Plot Line Generator  |
+-------------------------
