@@ -1,7 +1,9 @@
 -------------------------
 |        SUMMARY        |
 -------------------------
-Story Mode is a simulation program that generates a classic RPG story line. It will generate the main character, their side characters, plot points, etc.
+Story Mode is a simulation program that generates a classic RPG story
+line. It will generate the main character, their side characters, plot
+points, etc.
 
 Remaining points of completion are highlighted below.
 
@@ -9,13 +11,83 @@ Remaining points of completion are highlighted below.
 -------------------------
 |  Character Generator  |
 -------------------------
+this will generate a character for this story
 
+- generate lists
+    - names
+    - classes
+    - species
+    - appearance
+    - titles
+    - personality traits
+    - skills
+- selector / creator (create the character by selecting from lists)
+
+- initially have it select completely randomly
+- eventually make sure it makes logical choices
+    - e.g. certain species will have certain naming styles / classes,
+      appearances need to match species, personality traits shouldn't
+      conflict, etc.
+    - improve to take inputs about the world/locations
+
+- create distinction between main characters and NPCs
+    - e.g. make NPC generator simpler
+
+- create system to keep track of what topics a character is
+  knowledgeable about
+
+- generate history of character
 
 -------------------------
 |  Location  Generator  |
 -------------------------
+this will generate the world the story takes place in
 
+- generate continents
+- generate climates
+- generate countries / regions
+- generate "major locations"
+- select names of places from lists of possible names
+
+- initially it should just generate them
+    - perhaps a very simple version of a map
+
+- eventually generate a full-fledged grid map
+    - possibly with it selecting types of terrain for each "square"
+      in the grid based on probabilities of what it should make them.
+      that way the world is truly randomly generated.
+
+- in accordance with the knowledge system for characters, give each
+  major city / country a focus or thing its famous for
 
 -------------------------
 |  Plot Line Generator  |
 -------------------------
+this will be the main section of the program, controlling the other
+sections and driving the story itself
+
+- "problem" generator
+- "solution" generator
+
+- story generation
+    - do all initial generation
+    - generate multiple "quest" paths to achieve the general goal
+    - generate potential party characters and give them a "trigger"
+      that lets the main character meet them
+    - start having character make decisions on following quest paths
+        - this will (eventually) be decided based on everything "known"
+          to main character (skills, knowledge, location, relations,
+          inventory, previous paths, etc)
+    - continue choosing paths and playing out those mini stories until
+      goal is achieved
+
+-------------------------
+|  Relations Generator  |
+-------------------------
+this will control relations between characters, both in the past and
+present
+
+- relations of the past should be achieved by generating character
+  history (apply relations during this process)
+- control relations between characters based on choices, personality,
+  etc
